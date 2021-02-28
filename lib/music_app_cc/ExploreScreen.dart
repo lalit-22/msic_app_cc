@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:msic_app_cc/music_app_cc/ExploreSongEntity.dart';
 
 class ExploreScreen extends StatefulWidget {
   @override
@@ -13,30 +14,29 @@ class _ExploreScreenState extends State<ExploreScreen> {
         title: Text('Explore'),
       ),
       body: ListView(
-            // This next line does the trick.
-            scrollDirection: Axis.vertical,
-            children: <Widget>[
-              Container(
-                height: 160.0,
-                color: Colors.red,
-              ),
-              Container(
-                height: 160.0,
-                color: Colors.blue,
-              ),
-              Container(
-                height: 160.0,
-                color: Colors.green,
-              ),
-              Container(
-                height: 160.0,
-                color: Colors.yellow,
-              ),
-              Container(
-                height: 160.0,
-                color: Colors.orange,
-              ),
-            ],
+        // This next line does the trick.
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+          Entity('AR Rehman', 'Vande Mataram', 10),
+        ],
       ),
     );
   }

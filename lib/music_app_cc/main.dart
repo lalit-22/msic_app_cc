@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'ExploreScreen.dart';
 import 'PlayerScreen.dart';
-
 void main() {
   runApp(MaterialApp(
     home: MyApp(),
