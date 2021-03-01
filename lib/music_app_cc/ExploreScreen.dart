@@ -18,10 +18,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
         // This next line does the trick.
         scrollDirection: Axis.vertical,
         children: <Widget>[
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
+
+          Entity('Lata Mangeshkar', 'Vande Mataram', 10),
+          Entity('Zayn Malik', 'One Direction', 10),
+          Entity('Neha Kakkar', 'Tum hi Ho', 10),
+          Entity('Armaan Malik', 'Chale Aana', 10),
+          Entity('Lata Mangeshkar', 'Vande Mataram', 10),
+          Entity('Zayn Malik', 'One Direction', 10),
+          Entity('Neha Kakkar', 'Tum hi Ho', 10),
+          Entity('Armaan Malik', 'Chale Aana', 10),
 
         ],
       ),

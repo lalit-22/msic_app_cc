@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './PlayerScreen.dart';
 
 class Entity extends StatelessWidget {
   String authorName, songName;
@@ -9,10 +10,17 @@ class Entity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(
+    return GestureDetector(
+onTap: (){
+  Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => PlayerScreen()));
+},
 
+      child:
+      Column(
 
-      child: Column(
         children: [
           Text(
             this.songName,

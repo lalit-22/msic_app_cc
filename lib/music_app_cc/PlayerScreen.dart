@@ -6,6 +6,7 @@ class PlayerScreen extends StatefulWidget {
 }
 
 class _PlayerScreenState extends State<PlayerScreen> {
+  bool isPlaying = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,9 +25,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
             Container(
               width: 200,
               height: 200,
-              child: Image.network(
-                  'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.wgEDzpkNTfrXW2yFV9HkbgHaHa%26pid%3DApi&f=1'),
-            ),
+              child: Image(image: AssetImage('assets/music ram.jpg',),),),
             SizedBox(
               height: 50,
             ),
@@ -38,8 +37,12 @@ class _PlayerScreenState extends State<PlayerScreen> {
                     onPressed: () {},
                   ),
                   IconButton(
-                    icon: Icon(Icons.play_arrow),
-                    onPressed: () {},
+                    icon: Icon(isPlaying ? Icons.pause : Icons.play_arrow),
+                    onPressed: () {
+                      setState(() {
+                        isPlaying = !isPlaying;
+                      });
+                    },
                   ),
                   IconButton(
                     icon: Icon(Icons.skip_next),
