@@ -12,6 +12,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Explore'),
+        backgroundColor: Colors.greenAccent,
       ),
       body: ListView(
         // This next line does the trick.
@@ -21,21 +22,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           Entity('AR Rehman', 'Vande Mataram', 10),
           Entity('AR Rehman', 'Vande Mataram', 10),
           Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
-          Entity('AR Rehman', 'Vande Mataram', 10),
+
         ],
       ),
     );

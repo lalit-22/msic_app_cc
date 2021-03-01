@@ -10,6 +10,8 @@ class Entity extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
+
+
       child: Column(
         children: [
           Text(

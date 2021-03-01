@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ExploreScreen.dart';
 import 'PlayerScreen.dart';
+import './FirstScreen.dart';
 void main() {
   runApp(MaterialApp(
     home: MyApp(),
@@ -82,10 +83,12 @@ class _State extends State<MyApp> {
                   onPressed: () {
                     print(nameController.text);
                     print(passwordController.text);
+                    // Navigator.of(context).push(build(context))
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ExploreScreen()));
+                            builder: (context) => Firstscreen()));
+
                   },
                 )),
             Container(
