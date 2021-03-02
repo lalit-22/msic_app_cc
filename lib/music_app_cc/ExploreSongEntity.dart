@@ -27,15 +27,18 @@ onTap: (){
             style: TextStyle(
 
 
+
             ),
           ),
           Row(
             children: [
               Text(
                 this.authorName,
+
               ),
               Text(
                 this.duration.toString(),
+
               ),
             ],
           ),
@@ -43,4 +46,5 @@ onTap: (){
       ),
     );
   }
+
 }
