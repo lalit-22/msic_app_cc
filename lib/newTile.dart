@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:msic_app_cc/music_detail.dart';
+import 'package:msic_app_cc/MusicDetail.dart';
 
 class NewTile extends StatefulWidget {
   @override
