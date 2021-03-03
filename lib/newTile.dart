@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:msic_app_cc/music_detail.dart';
 
 class NewTile extends StatefulWidget {
   @override
@@ -14,7 +15,9 @@ class _NewTileState extends State<NewTile> {
     return Scaffold(appBar: AppBar(
       backgroundColor: Colors.greenAccent,
       title: Text('Music'),), body:Column(children: [
-      ListTile(title: Text('Vande Mataram'), subtitle: Text('Arjit Singh'), trailing: Icon(Icons.music_note),),
+      InkWell(onTap: (){
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => MusicDetail(),));
+      }, child:ListTile(title: Text('Vande Mataram'), subtitle: Text('Lata Mangeshkar'), trailing: Icon(Icons.music_note),), ), 
       ListTile(title: Text('One Direction'), subtitle: Text('Zayn Malik'), trailing: Icon(Icons.music_note),),
       ListTile(title: Text('Tum Hi Ho'), subtitle: Text('Neha Kakkar'), trailing: Icon(Icons.music_note),),
       ListTile(title: Text('Chale Aana'), subtitle: Text('Armaan malik'), trailing: Icon(Icons.music_note),),
