@@ -25,9 +25,6 @@ onTap: (){
           Text(
             this.songName,
             style: TextStyle(
-
-
-
             ),
           ),
           Row(

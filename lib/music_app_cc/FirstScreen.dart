@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:msic_app_cc/newTile.dart';
 import './ExploreScreen.dart';
 
 class  Firstscreen extends StatefulWidget {
@@ -43,10 +44,7 @@ class _FirstscreenState extends State<Firstscreen> {
                 ),
                 color: Colors.greenAccent,
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => ExploreScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => NewTile(),));
                 },
                 child: Text(
                   'Music List',
